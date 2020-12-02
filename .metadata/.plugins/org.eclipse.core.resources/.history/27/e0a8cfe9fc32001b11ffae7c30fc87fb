@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="employee" class="com.cg.lab2.Employee">
+		<property name="employeeId" value="1892" />
+		<property name="employeeName" value="Divya Sree" />
+		<property name="salary" value="32000" />
+		<property name="age" value="22" />
+		<property name="businessUnit" ref="sbu"></property>
+	</bean>
+	<bean id="sbu" class="com.cg.lab12.SBU">
+	
+	<property name="sbuCode" value="FS-BU"/>
+	<property name="sbuHead" value="Sunandi Sharma"/>
+	<property name="sbuName" value="Financial Services"/>
+	</bean>
+</beans>

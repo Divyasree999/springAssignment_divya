@@ -1,0 +1,16 @@
+package com.cg.lab14;
+
+import org.springframework.beans.factory.BeanFactory;
+import java.util.Scanner;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.FileSystemResource;
+
+import com.cg.lab14.Employee;
+import com.cg.lab14.Sbu;
+public class App {
+	public static void main(String[] args) {
+		
+	}
+}

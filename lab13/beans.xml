@@ -1,0 +1,57 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="employee1" class="com.cg.lab13.Employee">
+
+		<property name="empId">
+			<value>1892</value>
+		</property>
+		<property name="empName">
+			<value>Divya Sree</value>
+		</property>
+		<property name="salary">
+			<value>32000</value>
+		</property>
+		<property name="age">
+			<value>22</value>
+		</property>
+	</bean>
+	<bean id="employee2" class="com.cg.lab13.Employee">
+
+		<property name="empId">
+			<value>1675</value>
+		</property>
+		<property name="empName">
+			<value>sanya</value>
+		</property>
+		<property name="salary">
+			<value>43000</value>
+		</property>
+		<property name="age">
+			<value>32</value>
+		</property>
+
+
+	</bean>
+	<bean id="sbu" class="com.cg.lab13.Sbu">
+		<property name="sbuId">
+			<value>67452</value>
+		</property>
+		<property name="sbuName">
+			<value>FS</value>
+		</property>
+		<property name="sbuHead">
+			<value>Kiranya</value>
+		</property>
+		<property name="empList">
+			<list>
+				<ref bean="employee1" />
+				<ref bean="employee2" />
+			</list>
+
+		</property>
+	</bean>
+
+</beans>
